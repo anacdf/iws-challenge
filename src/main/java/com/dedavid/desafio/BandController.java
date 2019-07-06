@@ -33,7 +33,7 @@ public class BandController {
         return client.getAlbums();
     }
 
-    @GetMapping("/bands/{name}")
+    @GetMapping("/bands/name/{name}")
     List<BandResponse> findBandByName(@PathVariable String name) {
         return service.findBandByName(name);
     }
